@@ -8,7 +8,7 @@ defmodule Esbuild.MixProject do
     [
       app: :esbuild,
       version: @version,
-      elixir: "~> 1.14",
+      elixir: "~> 1.18",
       deps: deps(),
       description: "Mix tasks for installing and invoking esbuild",
       package: [
@@ -38,7 +38,6 @@ defmodule Esbuild.MixProject do
 
   defp deps do
     [
-      {:jason, "~> 1.4"},
       {:ex_doc, ">= 0.0.0", only: :docs}
     ]
   end

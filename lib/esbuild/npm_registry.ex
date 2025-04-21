@@ -44,7 +44,7 @@ defmodule Esbuild.NpmRegistry do
       }
     } =
       fetch_file!(url)
-      |> Jason.decode!()
+      |> JSON.decode!()
 
     %{"keyid" => keyid, "sig" => signature} =
       signatures
